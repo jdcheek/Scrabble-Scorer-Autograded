@@ -55,7 +55,7 @@ let vowelBonusScorer = function(word) {
 
 let scrabbleScorer = function(word) {
   let total = 0
-  // TODO: refactor for performance
+  // TODO: probably can refactor for performance
   for (let i = 0; i < word.length; i++) {
     for (const key in newPointStructure) {
       if (key == word[i]) {
